@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        counter-reset: section;
+    }
+
+    h1::before{
+        counter-increment: section;
+        content: "Section "counter(section)"- ";
+    }
+
+    h1{
+        counter-reset: part;
+    }
+
+    h2::before{
+        counter-increment: part;
+        content: counter(section)  "." counter(part) ". ";
+    }
+
+</style>
+<body>
+    
+    <h1>HTML TUTORIALS</h1>
+    <h2>html</h2>
+    <h2>html</h2>
+    <h2>html</h2>
+    <h2>html</h2>
+    <h2>html</h2>
+    <h2>html</h2>
+    <h2>html</h2>
+
+    <h1>CSS TUTORIALS</h1>
+    <h2>css</h2>
+    <h2>css</h2>
+    <h2>css</h2>
+    <h2>css</h2>
+    <h2>css</h2>
+    <h2>css</h2>
+    <h2>css</h2>
+    
+    <h1>javascript tutorials</h1>
+    <h2>java</h2>
+    <h2>java</h2>
+    <h2>java</h2>
+    <h2>java</h2>
+    <h2>java</h2>
+    <h2>java</h2>
+    <h2>java</h2>
+</body>
+</html>
